@@ -1,0 +1,232 @@
+/* =========================
+   CÀI ĐẶT CHUNG
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #222222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    margin: 8px 0 0;
+}
+
+
+/* =========================
+   SKIP LINK
+========================= */
+
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 10px;
+    padding: 12px 18px;
+    background-color: #ffffff;
+    color: #111827;
+    border: 2px solid #111827;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+
+/* =========================
+   THANH ĐIỀU HƯỚNG - FLEX
+========================= */
+
+nav {
+    background-color: #111827;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #374151;
+    transform: translateY(-3px);
+}
+
+nav a:focus {
+    outline: 3px solid #fbbf24;
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   NỘI DUNG CHÍNH
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+
+/* =========================
+   PHẦN GIỚI THIỆU - FLEX
+========================= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    text-align: left;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+
+/* =========================
+   TẤT CẢ HÌNH ẢNH
+   BOX MODEL
+========================= */
+
+img {
+    display: block;
+    max-width: 100%;
+    padding: 6px;
+    border: 3px solid #374151;
+    border-radius: 12px;
+}
+
+
+/* =========================
+   NÚT XEM SẢN PHẨM
+========================= */
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    margin-top: 15px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   3 Ô ĐIỂM NỔI BẬT - FLEX
+========================= */
+
+.feature-container {
+    display: flex;
+    gap: 25px;
+}
+
+.feature {
+    flex: 1;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 25px;
+    background-color: #1f2937;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* =========================
+   ĐIỆN THOẠI
+========================= */
+
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .feature-container {
+        flex-direction: column;
+    }
+}
