@@ -16,3 +16,12 @@ function undo() {
         "Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.";
 }
 window.onload = addTabFocus;
+function addTabFocus() {
+    console.log("Tab focus function activated");
+
+    var images = document.querySelectorAll("img");
+
+    for (var i = 0; i < images.length; i++) {
+        images[i].setAttribute("tabindex", "0");
+    }
+}
