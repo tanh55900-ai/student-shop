@@ -15,3 +15,4 @@ function undo() {
     document.getElementById("image").innerHTML =
         "Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.";
 }
+window.onload = addTabFocus;
