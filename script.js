@@ -8,3 +8,10 @@ function update(PreviewPic) {
     document.getElementById("image").style.backgroundImage =
         "url('" + PreviewPic.src + "')";
 }
+
+function undo() {
+    document.getElementById("image").style.backgroundImage = "url('')";
+    
+    document.getElementById("image").innerHTML =
+        "Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.";
+}
